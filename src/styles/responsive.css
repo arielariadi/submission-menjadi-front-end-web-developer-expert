@@ -1,0 +1,152 @@
+/* Di bawah 549px */
+@media screen and (max-width: 549px) {
+  /* Navbar */
+  .navbar-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+  }
+
+  nav {
+    z-index: 999;
+    background-color: white;
+    width: 180px;
+    position: fixed;
+    top: 130px;
+    left: -100%;
+    transition: left 0.3s ease;
+  }
+
+  nav .navbar-list {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .open {
+    left: 0;
+  }
+
+  .nav-item {
+    display: block;
+    text-align: center;
+    padding: 0.6rem 0;
+    border-bottom: 1px solid #e0e0e0;
+    width: 100%;
+    align-items: center;
+  }
+
+  nav .navbar-list li a {
+    font-size: 15px;
+  }
+
+  .hamburger-icon {
+    display: block;
+    font-family: 'Rubik', sans-serif;
+    font-size: 1.1rem;
+    font-weight: 700;
+    color: black;
+    padding: 0.5rem 0.8rem;
+    margin: 0.5rem auto;
+    background-color: white;
+    border-radius: 10%;
+    min-width: 44px;
+    min-height: 44px;
+  }
+
+  .hamburger-icon:hover {
+    color: var(--primary);
+    border-color: var(--primary);
+    background-color: black;
+  }
+  /* End Navbar */
+
+  /* Hero */
+
+  .hero {
+    height: 40vh;
+    margin-top: 130px;
+  }
+
+  .hero .hero-text h1 {
+    font-size: 1.5rem;
+    text-align: center;
+  }
+
+  .hero .hero-text p {
+    font-size: 13px;
+  }
+
+  .hero .hero-text .cta-container .cta {
+    font-size: 13px;
+    padding: 0.8rem 1rem;
+  }
+  /* End Hero */
+
+  /* Content */
+  main h2 {
+    font-size: 1.3rem;
+  }
+
+  .card {
+    height: 350px;
+  }
+
+  main .card-city {
+    font-size: 1rem;
+  }
+
+  main .card-name {
+    font-size: 1rem;
+  }
+
+  main .fa-star,
+  main .card-rating {
+    font-size: 1rem;
+  }
+
+  main .card-desc {
+    font-size: 0.7rem;
+  }
+  /* End Content */
+
+  /* to Top Icon */
+  .to-top {
+    right: 17px;
+    width: 46px;
+    height: 46px;
+  }
+  /* End to Top Icon */
+
+  /* Footer */
+  footer .menu a {
+    font-size: 0.9rem;
+  }
+
+  footer .copyright p {
+    font-size: 0.7rem;
+  }
+  /* End Footer */
+}
+
+/* Di atas 550px */
+@media screen and (min-width: 550px) {
+  .navbar-container {
+    position: fixed;
+  }
+
+  .hamburger-icon {
+    display: none;
+  }
+
+  .hero {
+    margin-top: 70px;
+  }
+}
+
+/* Di atas 1200px */
+@media screen and (min-width: 1200px) {
+  .hero {
+    min-width: 1000px;
+  }
+}
