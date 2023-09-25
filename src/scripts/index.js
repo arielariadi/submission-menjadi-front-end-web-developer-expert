@@ -15,6 +15,7 @@ import './component/footer/footer-bar.js';
 // JavaScript
 import App from './views/app';
 
+<<<<<<< HEAD
 // Data json
 import dataJson from '../public/data/DATA.json';
 
@@ -36,6 +37,9 @@ import dataJson from '../public/data/DATA.json';
 // main.addEventListener('click', () => {
 //   drawer.classList.remove('open');
 // });
+=======
+/* Toggle Navbar */
+>>>>>>> 0c491df (Membuat routes, home page, detail page template, dan favorite page template)
 
 const app = new App({
   button: document.getElementById('hamburger'),
@@ -44,6 +48,7 @@ const app = new App({
 });
 /* End Toggle Navbar */
 
+<<<<<<< HEAD
 /* Get dataJson */
 
 function getDataRestaurant(data) {
@@ -86,6 +91,15 @@ cardContents.forEach((cardContent) => {
   }
 });
 /* End Max Description */
+=======
+window.addEventListener('hashchange', () => {
+  app.renderPage();
+});
+
+window.addEventListener('load', () => {
+  app.renderPage();
+});
+>>>>>>> 0c491df (Membuat routes, home page, detail page template, dan favorite page template)
 
 /* to Top Icon */
 const toTop = document.querySelector('.to-top');
