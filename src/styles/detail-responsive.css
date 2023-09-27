@@ -1,0 +1,80 @@
+/* Di bawah 549px */
+@media screen and (max-width: 549px) {
+  /* Detail Restaurant */
+
+  .detail-restaurant {
+    margin-top: 150px;
+  }
+
+  .image-detail-wrapper img {
+    width: 90%;
+    height: auto;
+  }
+
+  .restaurant-detail-head {
+    margin-left: 25px;
+    color: black;
+    /* margin-top: 15px; */
+  }
+
+  .restaurant-detail-head h1 {
+    font-size: 1.2rem;
+  }
+
+  .rating-detail-container {
+    font-size: 0.9rem;
+    margin-top: 2px;
+  }
+
+  .fa-star.detail {
+    color: black;
+    font-size: 0.9rem;
+  }
+
+  .city-address-detail-container {
+    right: auto;
+    /* top: 458px; */
+    text-align: left;
+    font-size: 0.8rem;
+    top: auto; /* Hapus top untuk mengatur elemen sesuai aliran konten */
+    margin: 45px 27px;
+  }
+
+  .restaurant-detail-category-container {
+    margin-left: 26px;
+    margin-top: 10px;
+    font-size: 0.7rem;
+    bottom: -7px;
+    position: static;
+  }
+
+  .button-detail-container {
+    right: auto;
+    top: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 60px auto 0 27px;
+    text-align: center;
+  }
+
+  .button-detail-container .review {
+    padding: 12px;
+  }
+
+  .button-detail-container .favorite {
+    padding: 12px;
+    margin-left: 5px;
+    cursor: pointer;
+  }
+
+  .detail-description {
+    width: 90%;
+    margin: 140px auto;
+    font-size: 14px;
+    line-height: 1.7;
+    text-align: justify;
+  }
+
+  /* End Detail Restaurant */
+}

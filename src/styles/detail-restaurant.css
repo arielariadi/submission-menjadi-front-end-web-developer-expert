@@ -1,0 +1,140 @@
+/* variables */
+:root {
+  --primary: #1d5d9b;
+  --secondary: #068fff;
+}
+
+/* CSS Reset */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style-type: none;
+}
+/* End CSS Reset */
+
+html {
+  scroll-behavior: smooth;
+}
+
+/* Detail Restaurant */
+.detail-restaurant {
+  margin-top: 100px;
+}
+
+.image-detail-wrapper {
+  text-align: center;
+}
+
+.image-detail-wrapper img {
+  width: 80%;
+  height: 63vh;
+  object-fit: cover;
+}
+
+.restaurant-detail-head {
+  position: relative;
+  display: flex;
+  align-items: center;
+  margin-left: 134px;
+  color: black;
+  margin-top: 15px;
+}
+
+.restaurant-detail-head h1 {
+  font-size: 2.3rem;
+}
+
+.rating-detail-container {
+  margin-left: 10px;
+  font-size: 1.1rem;
+  margin-top: 5px;
+}
+
+.fa-star.detail {
+  color: black;
+}
+
+.card-rating-detail {
+  display: inline-block;
+}
+
+.city-address-detail-container {
+  position: absolute;
+  right: 133px;
+  top: 538px;
+  text-align: right;
+}
+
+.detail-city {
+  display: inline-block;
+  margin-bottom: 0;
+}
+
+.detail-road {
+  margin-top: 5px;
+}
+
+.restaurant-detail-category-container {
+  display: flex;
+  margin-left: 138px;
+  position: relative;
+  bottom: -15px;
+  color: white;
+  margin-top: 7px;
+}
+
+.restaurant-detail-category-container > div {
+  padding: 5px 10px;
+  background-color: var(--primary);
+}
+
+.restaurant-detail-category-container > div:nth-child(2n + 2) {
+  background-color: var(--secondary);
+  margin-left: 8px;
+}
+
+.button-detail-container {
+  position: absolute;
+  right: 133px;
+  top: 600px;
+}
+
+.button-detail-container .review {
+  padding: 14px;
+  background-color: var(--primary);
+  text-decoration: none;
+  color: white;
+  border-radius: 5px;
+  min-width: 44px;
+  min-height: 44px;
+}
+
+.button-detail-container .favorite {
+  padding: 14px;
+  background-color: white;
+  border: var(--primary) solid 1px;
+  color: var(--primary);
+  cursor: pointer;
+  font-weight: 800;
+  border-radius: 5px;
+  min-width: 44px;
+  min-height: 44px;
+}
+
+.button-detail-container .favorite:hover {
+  background-color: var(--primary);
+  color: white;
+}
+
+.button-detail-container .favorite i {
+  font-size: 15px;
+}
+
+.detail-description {
+  width: 81%;
+  margin: 60px auto;
+}
+
+/* Detail Restaurant */
