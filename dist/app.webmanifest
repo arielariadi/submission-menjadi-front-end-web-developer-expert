@@ -1,7 +1,7 @@
 {
-  "name": "My.Restoo Catalogue Lite",
+  "name": "My.Restoo Catalogue",
   "start_url": "./index.html",
-  "short_name": "My.Restoo Lite",
+  "short_name": "My.Restoo",
   "description": "Restaurant app to explore the best restaurants",
   "display": "standalone",
   "background_color": "#fff",

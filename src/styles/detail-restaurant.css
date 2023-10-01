@@ -63,7 +63,7 @@ html {
 .city-address-detail-container {
   position: absolute;
   right: 133px;
-  top: 538px;
+  top: 50%;
   text-align: right;
 }
 
@@ -136,5 +136,109 @@ html {
   width: 81%;
   margin: 60px auto;
 }
-
 /* Detail Restaurant */
+
+/* Menus */
+
+.menus-detail-container {
+  width: 70%;
+  text-align: center;
+  margin: auto;
+}
+
+.foods-container,
+.drinks-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.drink-text {
+  margin-top: 40px;
+}
+
+.food-item,
+.drink-item {
+  padding: 10px;
+  text-align: center;
+  width: 290px;
+  height: 100%;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s ease-in-out;
+  cursor: pointer;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.food-item:hover,
+.drink-item:hover {
+  transform: scale(1.05);
+}
+
+.food-item i,
+.drink-item i {
+  font-size: 2.3rem;
+  margin-right: 10px;
+}
+
+.food-item p,
+.drink-item p {
+  font-size: 1.1rem;
+  margin: 0;
+}
+/* End Menus */
+
+/* Reviews */
+.review-container {
+  width: 80%;
+  text-align: center;
+  margin: 40px auto 0 auto;
+}
+
+.review-card-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.review-card {
+  width: 30%;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  padding: 10px;
+  text-align: center;
+}
+
+.review-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.review-image {
+  font-size: 2rem;
+}
+
+.review-details h3 {
+  font-size: 1.2rem;
+  margin: 0;
+}
+
+.review-details p {
+  font-size: 0.9rem;
+  margin: 5px 0;
+}
+
+.review-content p {
+  font-size: 1rem;
+  margin: 10px 0;
+}
+
+/* End Reviews */

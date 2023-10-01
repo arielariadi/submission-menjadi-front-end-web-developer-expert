@@ -16,6 +16,7 @@ import './component/footer/footer-bar.js';
 
 // JavaScript
 import App from './views/app';
+import swRegister from './utils/sw-register';
 
 /* Toggle Navbar */
 const app = new App({
@@ -31,6 +32,7 @@ window.addEventListener('hashchange', () => {
 
 window.addEventListener('load', () => {
   app.renderPage();
+  swRegister();
 });
 
 /* to Top Icon */

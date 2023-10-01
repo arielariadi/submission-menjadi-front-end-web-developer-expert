@@ -1,5 +1,5 @@
-/* Di bawah 549px */
-@media screen and (max-width: 549px) {
+/* Di bawah 635px */
+@media screen and (max-width: 635px) {
   /* Detail Restaurant */
 
   .detail-restaurant {
@@ -14,7 +14,6 @@
   .restaurant-detail-head {
     margin-left: 25px;
     color: black;
-    /* margin-top: 15px; */
   }
 
   .restaurant-detail-head h1 {
@@ -33,10 +32,9 @@
 
   .city-address-detail-container {
     right: auto;
-    /* top: 458px; */
     text-align: left;
     font-size: 0.8rem;
-    top: auto; /* Hapus top untuk mengatur elemen sesuai aliran konten */
+    top: auto;
     margin: 45px 27px;
   }
 
@@ -70,11 +68,319 @@
 
   .detail-description {
     width: 90%;
-    margin: 140px auto;
+    margin: 140px auto 0 auto;
     font-size: 14px;
     line-height: 1.7;
     text-align: justify;
   }
-
   /* End Detail Restaurant */
+
+  /* Menus */
+
+  .menus-detail-container {
+    width: 90%;
+    text-align: center;
+    margin: auto;
+  }
+
+  .food-item {
+    width: 100%;
+  }
+
+  .food-text,
+  .drink-text {
+    margin-top: 35px;
+  }
+  /* End Menus */
+
+  /* Reviews */
+  .review-card-container {
+    gap: 5px;
+  }
+
+  .review-card {
+    width: 100%;
+    margin: 0 0 20px;
+  }
+
+  .review-details h3 {
+    font-size: 1rem;
+  }
+
+  .review-details p {
+    font-size: 0.8rem;
+  }
+
+  .review-content p {
+    font-size: 0.9rem;
+  }
+  /* End Reviews */
+}
+
+/* Di atas 636px dan di bawah 768px*/
+@media screen and (min-width: 636px) and (max-width: 767px) {
+  /* Detail Restaurant */
+  .restaurant-detail-head {
+    margin-left: 77px;
+  }
+
+  .restaurant-detail-head h1 {
+    font-size: 1.2rem;
+  }
+
+  .rating-detail-container {
+    font-size: 0.9rem;
+    margin-bottom: 4px;
+  }
+
+  .city-address-detail-container {
+    right: 80px;
+    top: 85%;
+    font-size: 0.8rem;
+  }
+
+  .restaurant-detail-category-container {
+    margin-left: 77px;
+  }
+
+  .restaurant-detail-category-container > div {
+    font-size: 0.8rem;
+  }
+
+  .button-detail-container {
+    right: 77px;
+    top: 96%;
+  }
+
+  .button-detail-container .review {
+    font-size: 0.8rem;
+    padding: 15px;
+  }
+
+  .button-detail-container .favorite {
+    font-size: 0.6rem;
+    padding: 5px;
+  }
+
+  .button-detail-container .favorite i {
+    font-size: 12px;
+  }
+  /* Detail Restaurant */
+
+  /* Menus */
+  .menus-detail-container {
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: auto;
+  }
+
+  .foods-container,
+  .drinks-container {
+    width: 100%;
+    display: flex;
+    justify-content: start;
+    flex-wrap: wrap;
+  }
+
+  .food-item,
+  .drink-item {
+    width: calc(33.33% - 20px);
+    margin: 5px auto;
+    text-align: left;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease-in-out;
+    cursor: pointer;
+  }
+  /* End Menus */
+
+  /* Reviews */
+  .review-card {
+    width: 48%;
+    margin: 0 1%;
+  }
+
+  .review-details h3 {
+    font-size: 1rem;
+  }
+
+  .review-details p {
+    font-size: 0.8rem; /* Mengubah ukuran font tanggal review */
+  }
+
+  .review-content p {
+    font-size: 0.9rem;
+  }
+  /* End Reviews */
+}
+
+/* 768px - 1023px */
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  /* Detail Restaurant */
+  .image-detail-wrapper img {
+    width: 85%;
+  }
+
+  .restaurant-detail-head {
+    margin-left: 75px;
+  }
+
+  .restaurant-detail-head h1 {
+    font-size: 1.5rem;
+  }
+
+  .rating-detail-container {
+    font-size: 1rem;
+    margin: 0 auto 0 10px;
+  }
+
+  .city-address-detail-container {
+    right: 80px;
+    top: 86%;
+    font-size: 0.9rem;
+  }
+
+  .restaurant-detail-category-container {
+    margin-left: 75px;
+  }
+
+  .button-detail-container {
+    right: 80px;
+    top: 96%;
+  }
+  /* End Detail Restaurant */
+
+  /* Menus */
+  .menus-detail-container {
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: auto;
+  }
+
+  .foods-container,
+  .drinks-container {
+    width: 100%;
+    display: flex;
+    justify-content: start;
+    flex-wrap: wrap;
+  }
+
+  .food-item,
+  .drink-item {
+    width: calc(33.33% - 20px);
+    margin: 5px auto;
+    text-align: left;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease-in-out;
+    cursor: pointer;
+  }
+  /* End Menus */
+
+  /* Reviews */
+  .review-card {
+    width: 30%;
+    margin: 0 1%;
+  }
+
+  .review-details h3 {
+    font-size: 1rem;
+  }
+
+  .review-details p {
+    font-size: 0.8rem;
+  }
+
+  /* Mengatur ukuran font isi review */
+  .review-content p {
+    font-size: 0.9rem;
+  }
+  /* End Reviews */
+}
+
+/* 1024px - 1365px */
+@media screen and (min-width: 1024px) and (max-width: 1365px) {
+  /* Detail Restaurants */
+  .image-detail-wrapper img {
+    width: 85%;
+  }
+
+  .restaurant-detail-head {
+    margin-left: 90px;
+  }
+
+  .city-address-detail-container {
+    right: 100px;
+    top: 462px;
+    font-size: 0.9rem;
+  }
+
+  .restaurant-detail-category-container {
+    margin-left: 90px;
+  }
+
+  .button-detail-container {
+    right: 100px;
+    top: 522px;
+  }
+  /* End Detail Restaurants */
+
+  /* Menus */
+  .menus-detail-container {
+    width: 90%;
+  }
+  /* End Menus */
+
+  /* Reviews */
+  .review-card {
+    width: 30%;
+    margin: 0 1%;
+  }
+
+  .review-details h3 {
+    font-size: 1rem;
+  }
+
+  .review-details p {
+    font-size: 0.8rem;
+  }
+
+  .review-content p {
+    font-size: 0.9rem;
+  }
+  /* End Reviews */
+}
+
+/* Lebar di atas 1366 dan tingginya 611px */
+@media screen and (min-width: 1366px) and (min-height: 611px) {
+  .city-address-detail-container {
+    right: 135px;
+    top: 83%;
+    font-size: 0.9rem;
+  }
+
+  .button-detail-container {
+    right: 135px;
+    top: 92%;
+  }
+}
+
+/* Lebar di atas 1366 dan tingginya 612px */
+@media screen and (min-width: 1366px) and (min-height: 612px) {
+  .city-address-detail-container {
+    right: 135px;
+    top: 80%;
+    font-size: 0.9rem;
+  }
+
+  .button-detail-container {
+    right: 135px;
+    top: 89%;
+  }
 }
