@@ -4,6 +4,7 @@ import restoCardTemplate from '../templates/resto-card';
 const Home = {
   async render() {
     return `
+        <hero-section></hero-section>
         <main-content></main-content>
         `;
   },

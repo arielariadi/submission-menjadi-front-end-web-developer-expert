@@ -1,15 +1,10 @@
 import RestaurantSource from '../../data/restaurant-source';
 import UrlParser from '../../routes/url-parser';
+import LikeButtonInitiator from '../../utils/like-button-initiator';
 import restoDetailTemplate from '../templates/resto-detail';
 
 const Detail = {
   async render() {
-    // Menghapus elemen hero-section jika ada
-    const heroSection = document.getElementById('hero');
-    if (heroSection) {
-      heroSection.remove();
-    }
-
     return `
       <section id="detailRestaurant" class="detail-restaurant">
 
@@ -26,6 +21,11 @@ const Detail = {
     detailRestaurantContainer.innerHTML += restoDetailTemplate(
       dataRestaurant.restaurant,
     );
+
+    LikeButtonInitiator.init({
+      likeButtonContainer: document.querySelector('#likeButtonContainer'),
+      restaurant: dataRestaurant.restaurant,
+    });
   },
 };
 

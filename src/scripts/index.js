@@ -6,6 +6,7 @@ import '../styles/main.css';
 import '../styles/responsive.css';
 import '../styles/detail-restaurant.css';
 import '../styles/detail-responsive.css';
+import '../styles/favorite-restaurant.css';
 
 // Component
 import './component/header/app-bar.js';

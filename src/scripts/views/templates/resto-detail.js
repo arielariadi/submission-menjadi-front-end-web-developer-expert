@@ -1,4 +1,5 @@
 import CONFIG from '../../globals/config';
+import { createLikeButtonTemplate } from './like-button';
 
 const restoDetailTemplate = (resto) => `
     <div class="image-detail-wrapper">
@@ -34,24 +35,13 @@ const restoDetailTemplate = (resto) => `
             
         </div>
 
-        <div class="button-detail-container">
-            <a href="#" class="review">Review</a>
-            <button class="favorite">
-                <i class="fa-regular fa-heart"></i> ADD TO FAVORITE
-            </button>
+        <div id="likeButtonContainer" class="button-detail-container">
+          ${createLikeButtonTemplate()}
         </div>
+        
         <div class="detail-description">
             <p>
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tempora
-                quidem nesciunt a velit consequatur saepe, dolore aut quos
-                blanditiis at voluptate dolor natus facilis illum. Neque sequi quas
-                earum quos enim labore reiciendis provident, ratione, alias beatae
-                voluptate. Ducimus atque aliquam aspernatur sequi veniam pariatur
-                nostrum rerum nobis quod, totam distinctio excepturi natus hic quos
-                reprehenderit illo ipsam quibusdam consequatur exercitationem
-                repellat. Ipsam, similique minus animi quae, earum nobis repellendus
-                ullam eveniet delectus, incidunt reiciendis libero blanditiis
-                deleniti soluta pariatur!
+                ${resto.description}
             </p>
         </div>
     </div>
@@ -92,7 +82,7 @@ const restoDetailTemplate = (resto) => `
         </div>
     </div>
 
-    <div class="review-container">
+    <div id="reviewContainer" class="review-container">
 		<div class="review-text">
 			<h2>Reviews</h2>
 		</div>

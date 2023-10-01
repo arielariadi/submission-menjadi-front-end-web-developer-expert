@@ -58,12 +58,18 @@
 
   .button-detail-container .review {
     padding: 12px;
+    font-size: 0.9rem;
   }
 
   .button-detail-container .favorite {
     padding: 12px;
     margin-left: 5px;
     cursor: pointer;
+    font-size: 0.7rem;
+  }
+
+  .button-detail-container .favorite i {
+    font-size: 0.8rem;
   }
 
   .detail-description {
