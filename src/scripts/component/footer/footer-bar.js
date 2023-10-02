@@ -39,3 +39,4 @@ class FooterBar extends HTMLElement {
 }
 
 customElements.define('footer-bar', FooterBar);
+export default FooterBar;

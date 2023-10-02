@@ -56,11 +56,6 @@
     text-align: center;
   }
 
-  .button-detail-container .review {
-    padding: 12px;
-    font-size: 0.9rem;
-  }
-
   .button-detail-container .favorite {
     padding: 12px;
     margin-left: 5px;
@@ -121,6 +116,13 @@
     font-size: 0.9rem;
   }
   /* End Reviews */
+
+  /* Review Form */
+  .review-form {
+    width: 90%;
+  }
+
+  /* End Review Form */
 }
 
 /* Di atas 636px dan di bawah 768px*/
@@ -156,11 +158,6 @@
   .button-detail-container {
     right: 77px;
     top: 96%;
-  }
-
-  .button-detail-container .review {
-    font-size: 0.8rem;
-    padding: 15px;
   }
 
   .button-detail-container .favorite {
@@ -214,7 +211,7 @@
   }
 
   .review-details p {
-    font-size: 0.8rem; /* Mengubah ukuran font tanggal review */
+    font-size: 0.8rem;
   }
 
   .review-content p {

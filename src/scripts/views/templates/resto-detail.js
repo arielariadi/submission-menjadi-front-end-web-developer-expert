@@ -31,11 +31,9 @@ const restoDetailTemplate = (resto) => `
         `,
           )
           .join('')}
-            
-            
-        </div>
+    </div>
 
-        <div id="likeButtonContainer" class="button-detail-container">
+    <div id="likeButtonContainer" class="button-detail-container">
           ${createLikeButtonTemplate()}
         </div>
         
@@ -51,7 +49,7 @@ const restoDetailTemplate = (resto) => `
 			<h2>Foods</h2>
 		</div>
 
-        <div class="foods-container">   
+    <div class="foods-container">   
             ${resto.menus.foods
               .map(
                 (food) => `
@@ -62,13 +60,13 @@ const restoDetailTemplate = (resto) => `
                 `,
               )
               .join('')}   
-        </div>
+    </div>
 
         <div class="drink-text">
 			<h2>Drinks</h2>
 		</div>
 
-        <div class="drinks-container">
+    <div class="drinks-container">
             ${resto.menus.drinks
               .map(
                 (drink) => `
@@ -83,11 +81,11 @@ const restoDetailTemplate = (resto) => `
     </div>
 
     <div id="reviewContainer" class="review-container">
-		<div class="review-text">
-			<h2>Reviews</h2>
-		</div>
+      <div class="review-text">
+        <h2>Reviews</h2>
+      </div>
 
-		<div class="review-card-container">
+		  <div class="review-card-container">
         ${resto.customerReviews
           .map(
             (review) => `
@@ -113,8 +111,7 @@ const restoDetailTemplate = (resto) => `
         `,
           )
           .join('')}
-          </div>
-	</div>
+    </div>
 `;
 
 export default restoDetailTemplate;

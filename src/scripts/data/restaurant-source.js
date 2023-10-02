@@ -19,9 +19,13 @@ class RestaurantSource {
       headers: {
         'Content-Type': 'application/json',
       },
+      body: JSON.stringify({
+        id: review.id,
+        name: review.name,
+        review: review.review,
+      }),
     });
-    const responseJson = await response.json();
-    return responseJson;
+    return response.json();
   }
 }
 
