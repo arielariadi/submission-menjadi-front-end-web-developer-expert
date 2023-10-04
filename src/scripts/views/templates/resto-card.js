@@ -5,7 +5,7 @@ const restoCardTemplate = (resto) => `
         <a href="#/detail/${resto.id}">
             <img src="${CONFIG.BASE_IMAGE_URL + resto.pictureId}" alt="${
               resto.name
-            }" />
+            }" crossorigin="anonymous" />
         </a>
         <div class="card-content">
                 <p class="card-city">${resto.city}</p>

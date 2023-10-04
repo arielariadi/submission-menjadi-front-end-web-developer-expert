@@ -5,7 +5,7 @@ const restoDetailTemplate = (resto) => `
     <div class="image-detail-wrapper">
         <img src="${CONFIG.BASE_IMAGE_URL + resto.pictureId}" alt="${
           resto.name
-        }" />
+        }" crossorigin="anonymous" />
     </div>
 
     <div class="detail-content">
