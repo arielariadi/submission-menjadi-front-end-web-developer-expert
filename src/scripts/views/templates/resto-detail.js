@@ -1,5 +1,5 @@
 import CONFIG from '../../globals/config';
-import { createLikeButtonTemplate } from './like-button';
+import { createLikeRestaurantButtonTemplate } from './like-button';
 
 const restoDetailTemplate = (resto) => `
     <div class="image-detail-wrapper">
@@ -34,7 +34,7 @@ const restoDetailTemplate = (resto) => `
     </div>
 
     <div id="likeButtonContainer" class="button-detail-container">
-          ${createLikeButtonTemplate()}
+          ${createLikeRestaurantButtonTemplate()}
         </div>
         
         <div class="detail-description">

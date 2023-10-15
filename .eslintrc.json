@@ -24,6 +24,13 @@
     "no-param-reassign": "off",
     "prefer-template": "off",
     "no-use-before-define": "off",
-    "import/order": "off"
+    "import/order": "off",
+    "arrow-body-style": "off",
+    "no-prototype-builtins": "off",
+    "consistent-return": "off",
+    "import/prefer-default-export": "off",
+    "prefer-const": "off",
+    "eqeqeq": "off",
+    "no-shadow": "off"
   }
 }
