@@ -7,7 +7,8 @@
     "start-dev": "webpack-dev-server --config webpack.dev.js",
     "build": "webpack --config webpack.prod.js",
     "test": "jest",
-    "lint": "eslint ./src"
+    "lint": "eslint ./src",
+    "e2e": "codeceptjs run --steps"
   },
   "keywords": [],
   "author": "your_name <your.email@domain.com>",
@@ -20,6 +21,7 @@
     "babel-jest": "^29.7.0",
     "babel-loader": "^8.2.5",
     "clean-webpack-plugin": "^4.0.0",
+    "codeceptjs": "^3.5.6",
     "copy-webpack-plugin": "^11.0.0",
     "css-loader": "^6.7.1",
     "eslint": "^8.50.0",
@@ -32,6 +34,7 @@
     "jest": "^29.7.0",
     "jest-environment-jsdom": "^29.7.0",
     "jest-mock": "^29.7.0",
+    "playwright": "^1.39.0",
     "prettier": "^3.0.3",
     "style-loader": "^3.3.1",
     "webpack": "^5.88.2",
