@@ -3,9 +3,9 @@ import CONFIG from '../../globals/config';
 const restoCardTemplate = (resto) => `
     <div class="card">
         <a href="#/detail/${resto.id}">
-            <img src="${CONFIG.BASE_IMAGE_URL + resto.pictureId}" alt="${
-              resto.name
-            }" crossorigin="anonymous" />
+            <img class="lazyload" data-src="${
+              CONFIG.BASE_IMAGE_URL.SMALL + resto.pictureId
+            }" alt="${resto.name}" crossorigin="anonymous" />
         </a>
         <div class="card-content">
                 <p class="card-city">${resto.city}</p>

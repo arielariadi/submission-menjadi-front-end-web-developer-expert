@@ -19,6 +19,10 @@ import './component/footer/footer-bar.js';
 import App from './views/app';
 import swRegister from './utils/sw-register';
 
+// Lazysizes
+import 'lazysizes';
+import 'lazysizes/plugins/parent-fit/ls.parent-fit';
+
 /* Toggle Navbar */
 const app = new App({
   button: document.getElementById('hamburger'),

@@ -10,7 +10,7 @@ class HeroSection extends HTMLElement {
 				<h1>Culinary Craftsmanship</h1>
 				<p>Elevate Your Dining Experience</p>
 				<div class="cta-container">
-					<a href="#cardContainer" class="cta">Explore</a>
+					<a href="#cardContainer" class="cta" aria-label="Explore restaurants">Explore</a>
 				</div>
 			</div>
 		</div>

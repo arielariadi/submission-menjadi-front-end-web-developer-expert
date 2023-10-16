@@ -5,9 +5,9 @@ class ToTopIcon extends HTMLElement {
 
   render() {
     this.innerHTML = `
-        <a href="javascript:void(0)" class="to-top">
+    <button href="javascript:void(0)" class="to-top" aria-label="Scroll to Top">
 			<i class="fa-solid fa-chevron-up"></i>
-		</a>
+		</button>
         `;
 
     const toTopButton = this.querySelector('.to-top');

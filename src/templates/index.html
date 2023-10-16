@@ -24,13 +24,9 @@
     <link
       href="https://fonts.googleapis.com/css2?family=Lobster&family=Poppins:wght@300;400;500;600&family=Rubik&display=swap"
       rel="stylesheet"
+      rel="preload"
+      as="style"
     />
-
-    <!-- Font awesome -->
-    <script
-      src="https://kit.fontawesome.com/65c823886a.js"
-      crossorigin="anonymous"
-    ></script>
 
     <title>My.Restoo</title>
   </head>
@@ -42,5 +38,14 @@
     <to-top-icon></to-top-icon>
 
     <footer-bar></footer-bar>
+
+    <!-- Font awesome -->
+    <script
+      onload="this.onload=null;this.rel='stylesheet'"
+      rel="preload"
+      src="https://kit.fontawesome.com/65c823886a.js"
+      crossorigin="anonymous"
+      as="style"
+    ></script>
   </body>
 </html>

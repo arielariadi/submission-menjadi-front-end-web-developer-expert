@@ -271,6 +271,8 @@ main .content h2 {
   transition: all 0.4s;
   min-width: 44px;
   min-height: 44px;
+  border: none;
+  cursor: pointer;
 }
 
 .to-top.active {

@@ -31,6 +31,9 @@
     "import/prefer-default-export": "off",
     "prefer-const": "off",
     "eqeqeq": "off",
-    "no-shadow": "off"
+    "no-shadow": "off",
+    "func-names": "off",
+    "prefer-destructuring": "off",
+    "import/no-unresolved":off
   }
 }

@@ -5,12 +5,10 @@ class AppBar extends HTMLElement {
 
   render() {
     this.innerHTML = `
-        <a href="#mainContent" tabindex="0" class="skip-link"
-			>Menuju ke konten utama</a
-		>
+        <a href="#mainContent" tabindex="0" class="skip-link" aria-label="Menuju ke konten utama">Menuju ke konten utama</a>
 		<header class="navbar-container">
 			<div class="logo">
-				<a class="navbar-brand" href="/">
+				<a class="navbar-brand" href="/" aria-label="Logo Website">
 					<i class="fa-solid fa-store"></i>
 					My.<span>Restoo</span></a
 				>
@@ -21,12 +19,12 @@ class AppBar extends HTMLElement {
 
 			<nav id="drawer">
 				<ul class="navbar-list">
-					<li class="nav-item"><a href="/">Home</a></li>
-					<li class="nav-item"><a href="#/favorite">Favorite</a></li>
+					<li class="nav-item"><a href="/" aria-label="Menu home">Home</a></li>
+					<li class="nav-item"><a href="#/favorite" aria-label="Menu favorite">Favorite</a></li>
 					<li class="nav-item">
 						<a
 							href="https://www.linkedin.com/in/muhammad-ariel-ariadi-a7a2901b2/"
-							target="_blank"
+							target="_blank" aria-label="Menu about me"
 							>About Us</a
 						>
 					</li>
