@@ -22,11 +22,11 @@ class FooterBar extends HTMLElement {
 				></a>
 			</div>
 			<div class="menu">
-				<a href="/" aria-label="Menu home">Home</a>
-				<a href="#/favorite" aria-label="Menu favorite">Favorite</a>
+				<a href="/" aria-label="Home">Home</a>
+				<a href="#/favorite" aria-label="Favorite">Favorite</a>
 				<a
 					href="https://www.linkedin.com/in/muhammad-ariel-ariadi-a7a2901b2/"
-					target="_blank" aria-label="Menu about me"
+					target="_blank" aria-label="About Us"
 					>About Us</a
 				>
 			</div>
