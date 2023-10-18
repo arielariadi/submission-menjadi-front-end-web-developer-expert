@@ -1,6 +1,7 @@
 const common = require('./webpack.common');
 const { merge } = require('webpack-merge');
-const { BundleAnalyzerPlugin } = require('webpack-bundle-analyzer');
+const BundleAnalyzerPlugin =
+  require('webpack-bundle-analyzer').BundleAnalyzerPlugin;
 const { CleanWebpackPlugin } = require('clean-webpack-plugin');
 const TerserPlugin = require('terser-webpack-plugin');
 const CssMinimizerPlugin = require('css-minimizer-webpack-plugin');
@@ -56,5 +57,13 @@ module.exports = merge(common, {
     },
   },
 
-  plugins: [new CleanWebpackPlugin(), new BundleAnalyzerPlugin()],
+  plugins: [
+    new CleanWebpackPlugin(),
+    new BundleAnalyzerPlugin({
+      analyzerMode:
+        process.env.NODE_ENV === 'production' ? 'disabled' : 'server',
+      generateStatsFile: true,
+      statsOptions: { source: false },
+    }),
+  ],
 });
