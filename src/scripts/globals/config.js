@@ -5,7 +5,7 @@ const CONFIG = {
     MEDIUM: 'https://restaurant-api.dicoding.dev/images/medium/',
     LARGE: 'https://restaurant-api.dicoding.dev/images/large/',
   },
-  CACHE_NAME: new Date().toISOString(),
+  CACHE_NAME: 'my-restoo-cache-v1',
   DATABASE_NAME: 'my-restoo-database',
   DATABASE_VERSION: 1,
   OBJECT_STORE_NAME: 'my.restoo',
