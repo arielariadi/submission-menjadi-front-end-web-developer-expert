@@ -60,6 +60,7 @@ module.exports = merge(common, {
   plugins: [
     new CleanWebpackPlugin(),
     new BundleAnalyzerPlugin({
+      // Dinonaktifkan agar tidak gagal pada saat dideploy
       openAnalyzer: false,
       analyzerMode: 'static',
     }),
