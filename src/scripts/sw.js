@@ -17,6 +17,16 @@ const assetsToCache = [
   './app.bundle.js',
   './app.webmanifest',
   './sw.bundle.js',
+
+  './576.bundle.js',
+  './666.bundle.js',
+  './737.bundle.js',
+  './app~7bd12dde.bundle.js',
+  './app~9af0ee1e.bundle.js',
+  './app~ca0940c6.bundle.js',
+  './app~d1658f4b.bundle.js',
+  './app~e4317507.bundle.js',
+  './bd6b63650298f334a08b.jpg',
 ];
 
 self.addEventListener('install', (event) => {

@@ -34,6 +34,6 @@
     "no-shadow": "off",
     "func-names": "off",
     "prefer-destructuring": "off",
-    "import/no-unresolved":off
+    "import/no-unresolved": "off"
   }
 }
