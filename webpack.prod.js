@@ -60,10 +60,8 @@ module.exports = merge(common, {
   plugins: [
     new CleanWebpackPlugin(),
     new BundleAnalyzerPlugin({
-      analyzerMode:
-        process.env.NODE_ENV === 'production' ? 'disabled' : 'server',
-      generateStatsFile: true,
-      statsOptions: { source: false },
+      openAnalyzer: false,
+      analyzerMode: 'static',
     }),
   ],
 });
