@@ -1,5 +1,5 @@
 # Deskripsi
-Ini adalah submission ke tiga dari kelas "Menjadi Front-End Web Developer Expert"
+Ini adalah submission dari kelas "Menjadi Front-End Web Developer Expert"
 
 # Link Website
 https://myrestoo.netlify.app/
