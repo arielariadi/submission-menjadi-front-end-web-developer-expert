@@ -31,7 +31,7 @@ class FooterBar extends HTMLElement {
 				>
 			</div>
 			<div class="copyright">
-				<p>&copy 2023 | Submission Dicoding | My.Restoo</p>
+				<p>&copy ${new Date().getFullYear()} | Submission Dicoding | My.Restoo</p>
 			</div>
 		</footer>
         `;
